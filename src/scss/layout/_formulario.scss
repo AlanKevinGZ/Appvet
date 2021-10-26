@@ -1,0 +1,36 @@
+.formulario{
+    margin-top: 1rem;
+    .formCampo{
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        label{
+            margin-right: 5px;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: white;
+            width: 8rem;
+        }
+        input[type=text],input[type=date],input[type=time]{
+            width: 90%;
+            border: none;
+            padding: 1rem 5px;
+            border: 2px solid $azul;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+        }
+    }
+    .alerta{
+        font-size: 2rem ;
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        text-transform: uppercase;
+
+        &.error{
+            color: red;
+        }
+    }
+}

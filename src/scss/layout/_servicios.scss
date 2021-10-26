@@ -1,0 +1,49 @@
+.listado_servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 5px;
+    margin-top: 1rem;
+    .servicio{
+        background-color: $blanco;
+        border-radius: 9px;
+        margin: 1rem 0px;
+        width: 49%;
+        padding: 2rem;
+        cursor: pointer;
+        p{
+            font-size: 1.7rem;
+            font-weight: bold;
+            color: black;
+            margin: 0px 0px 1rem 0px;
+        }
+        
+        span{
+            font-weight: bold;
+            color: #ff8000 ;
+            font-size: 2rem;
+        }
+    }
+
+    @include telefono{
+        .servicio{
+            padding: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                font-size: 1.5rem;
+                text-align: center;
+                font-weight: lighter;
+            }
+            span{
+                font-size: 1.7rem;
+            }
+        }
+    }
+    .seleccionar{
+        background-color: $azul;
+    }
+}

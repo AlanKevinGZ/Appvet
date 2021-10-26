@@ -1,0 +1,54 @@
+.contenedor-form{
+    background-color: $negro;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100vh;
+    .imagen{
+        height:auto ;
+        width: 55%;
+        background-image: url("../../src/img/1.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    @include tablet{
+        .imagen{
+            min-height: 30vh;
+            width: 100%;
+        }
+        
+    }
+
+    .contendor-formulario{
+        width: 49%;
+        padding: 1rem 0px;
+        
+    }
+
+    @include tablet{
+        .contendor-formulario{
+            height: 70%;
+            width: 100%;
+        }
+        
+    }
+
+    //secciones
+    .seccion{
+        display: none;
+        margin: 3rem 0px;
+    }
+    .tab-seleccionado{
+       display: block !important;
+    }
+
+   
+}
+
+@include tablet{
+    .contenedor-form{
+        flex-direction: column;
+    }
+    
+}
